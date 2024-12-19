@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body{
+    font-family: 'Bai Jamjuree', serif;
+    font-size: 18px;
+    background-image: url(/images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+p{
+    line-height: 1.5;
+    color: hsl(201, 11%, 66%);
+}
+
+h2, h3{
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.7rem;
+}
+
+a{
+    color: hsl(210, 10%, 33%);
+    text-decoration: none;
+}
+
+.link:hover{
+    color: hsl(171, 66%, 44%);
+}
+
+main{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+.hero{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.hero-logo{
+    width: 35%;
+}
+
+.hero-heading{
+    margin-bottom: 1rem;
+}
+
+.download-btns{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.download-for-ios{
+    text-decoration: none;
+    color: white;
+    background-color: hsl(171, 66%, 44%);
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.download-for-mac{
+    text-decoration: none;
+    color: white;
+    background-color: hsl(233, 100%, 69%);
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.download-for-mac:hover, .download-for-ios:hover{
+    opacity: 0.7;
+}
+
+
+.hero, .mac-monitor-container, .devices-container, .workflow-container, .company-logos, .download-section{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mac-heading, .devices-heading, .workflow-content > header > h3{
+    margin-bottom: 1rem;
+
+}
+
+.mac-img{
+    margin: 3rem 0;
+}
+
+.ipad-img{
+    margin-top: 3rem;
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.list-item > h3{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.workflow-list{
+    margin-top: 3rem;
+
+}
+
+.workflow-list > .list-item{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+
+.workflow-list > .list-item > img{
+    width: 10%;
+    margin: 0 auto;
+}
+
+.logo-item > img{
+    width: 40%;
+}
+
+.download-section{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.download-content > h3{
+    margin-bottom: 1rem;
+}
+
+footer{
+    margin-top: 8rem;
+    background-color: hsla(202, 11%, 66%, 0.162);
+}
+
+.content-wrap{
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.footer-logo{
+    width: 20%;
+}
+
+.sns-icon{
+    width: 100%;
+}
+
+.sns-icon:hover{
+    filter: invert(67%) sepia(59%) saturate(385%) hue-rotate(121deg) brightness(88%) contrast(88%);
+}
+
+.sns-links > .sns-list{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+@media (min-width: 700px) {
+    body{
+        background-image: url(/images/bg-header-desktop.png);
+        background-repeat: no-repeat;
+    }
+
+    .hero, .mac-container-title, .header, .download-content{
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    .hero{
+        height: 70vh;
+    }
+
+    .hero-logo{
+        width: 16%;
+    }
+
+    h2{
+        font-size: 2.3rem;
+    }
+
+    h3{
+        font-size: 1.8rem;
+    }
+
+    .download-btns{
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    .mac-monitor-container{
+        width: 100%;
+    }
+
+    .mac-img-content{
+        display: flex;
+        align-items: center;
+    }
+
+    .mac-img-content > article{
+        width: 25%;
+        text-align: left;
+    }
+
+    .mac-img-content > article, .mac-img{
+        margin-right: auto;
+    }
+
+    .mac-img{
+        width: 50%;  
+    }
+
+    .ipad-img{
+        width: 60%;  
+    }
+
+    .workflow-list{
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .workflow-list > .list-item{
+        width: 30%;
+    }
+
+    .logo-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .logo-item > img{
+        width: 100%;
+    }
+
+    .content-wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .footer-logo{
+        width: 40%;
+    }
+
+    .links-list{
+        flex-direction: row;
+    }
+
+    .sns-links > .sns-list{
+        width: 100%;
+        align-items: center;
+    }
+}
